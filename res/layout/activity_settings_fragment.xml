@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    tools:context=".MainActivity" >
+    
+    <RelativeLayout
+        android:id="@+id/rl_interval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp" >
+        
+        <TextView
+            android:id="@+id/tv_interval_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/interval_title"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <TextView
+            android:id="@+id/tv_interval_content"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_interval_title"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:text="@string/interval_content"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        
+        <Spinner
+            android:id="@+id/sp_interval"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:entries="@array/interval_array"
+            android:prompt="@string/interval_title" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+    	    android:id="@+id/rl_duration"
+    	    android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:layout_below="@+id/rl_interval"
+        	android:layout_marginTop="10dp" >
+        
+    	    <View
+            	android:layout_width="fill_parent"
+            	android:layout_height="1dp"
+            	android:layout_marginLeft="3dp"
+            	android:layout_marginRight="5dp"          
+            	android:background="#FFC0C0C0" />
+    	    
+    	    <TextView
+    	        android:id="@+id/tv_duration_title"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:text="@string/duration_title"
+    	        android:layout_marginTop="10dp"
+    	        android:textAppearance="?android:attr/textAppearanceLarge" />
+    	    
+    	    <TextView
+    	        android:id="@+id/tv_duration_content"
+    	        android:layout_width="220dp"
+    	        android:layout_height="wrap_content"
+    	        android:layout_below="@+id/tv_duration_title"
+    	        android:layout_marginLeft="2dp"
+    	        android:layout_marginRight="2dp"
+    	        android:text="@string/duration_content"
+    	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	    
+    	    <Spinner
+    	        android:id="@+id/sp_duration"
+    	        android:layout_width="100dp"
+    	        android:layout_height="wrap_content"
+    	        android:layout_alignParentRight="true"
+    	        android:layout_marginTop="20dp"
+    	        android:entries="@array/duration_array"
+            	android:prompt="@string/duration_title" />
+    	    
+       </RelativeLayout>
+	
+</RelativeLayout>

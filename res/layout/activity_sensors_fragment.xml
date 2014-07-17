@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rl_accelerometer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp" >
+        
+        <TextView
+            android:id="@+id/tv_accelerometer_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/accelerometer_title"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <TextView
+            android:id="@+id/tv_accelerometer_content"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_accelerometer_title"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:text="@string/accelerometer_content"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        
+        <ToggleButton
+            android:id="@+id/tb_accelerometer"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:onClick="onAccelerometerClicked" />
+        
+    </RelativeLayout>
+        
+    <RelativeLayout
+    	    android:id="@+id/rl_sms"
+    	    android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:layout_below="@+id/rl_accelerometer"
+        	android:layout_marginTop="10dp" >
+        
+    	    <View
+            	android:layout_width="fill_parent"
+            	android:layout_height="1dp"
+            	android:layout_marginLeft="3dp"
+            	android:layout_marginRight="5dp"          
+            	android:background="#FFC0C0C0" />
+    	    
+    	    <TextView
+    	        android:id="@+id/tv_sms_title"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:text="@string/sms_title"
+    	        android:layout_marginTop="10dp"
+    	        android:textAppearance="?android:attr/textAppearanceLarge" />
+    	    
+    	    <TextView
+    	        android:id="@+id/tv_sms_content"
+    	        android:layout_width="220dp"
+    	        android:layout_height="wrap_content"
+    	        android:layout_below="@+id/tv_sms_title"
+    	        android:layout_marginLeft="2dp"
+    	        android:layout_marginRight="2dp"
+    	        android:text="@string/sms_content"
+    	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	    
+    	    <ToggleButton
+    	        android:id="@+id/tb_sms"
+    	        android:layout_width="80dp"
+    	        android:layout_height="wrap_content"
+    	        android:layout_alignParentRight="true"
+    	        android:layout_marginTop="10dp"
+    	        android:textSize="16sp"
+    	        android:onClick="onSmsClicked" />
+    	    
+       </RelativeLayout>
+    	
+       <RelativeLayout
+    	    android:id="@+id/rl_call"
+    	    android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:layout_below="@+id/rl_sms"
+        	android:layout_marginTop="10dp" >
+        
+    	    <View
+            	android:layout_width="fill_parent"
+            	android:layout_height="1dp"
+            	android:layout_marginLeft="3dp"
+            	android:layout_marginRight="5dp"          
+            	android:background="#FFC0C0C0" />
+    	    
+    	    <TextView
+    	        android:id="@+id/tv_call_title"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:text="@string/call_title"
+    	        android:layout_marginTop="10dp"
+    	        android:textAppearance="?android:attr/textAppearanceLarge" />
+    	    
+    	    <TextView
+    	        android:id="@+id/tv_call_content"
+    	        android:layout_width="220dp"
+    	        android:layout_height="wrap_content"
+    	        android:layout_below="@+id/tv_call_title"
+    	        android:layout_marginLeft="2dp"
+    	        android:layout_marginRight="2dp"
+    	        android:text="@string/call_content"
+    	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	    
+    	    <ToggleButton
+    	        android:id="@+id/tb_call"
+    	        android:layout_width="80dp"
+    	        android:layout_height="wrap_content"
+    	        android:layout_alignParentRight="true"
+    	        android:layout_marginTop="10dp"
+    	        android:textSize="16sp"
+    	        android:onClick="onCallClicked" />
+    	    
+       </RelativeLayout>
+       
+       <RelativeLayout
+    	    android:id="@+id/rl_applications"
+    	    android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:layout_below="@+id/rl_call"
+        	android:layout_marginTop="10dp" >
+        
+    	    <View
+            	android:layout_width="fill_parent"
+            	android:layout_height="1dp"
+            	android:layout_marginLeft="3dp"
+            	android:layout_marginRight="5dp"          
+            	android:background="#FFC0C0C0" />
+    	    
+    	    <TextView
+    	        android:id="@+id/tv_applications_title"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:text="@string/applications_title"
+    	        android:layout_marginTop="10dp"
+    	        android:textAppearance="?android:attr/textAppearanceLarge" />
+    	    
+    	    <TextView
+    	        android:id="@+id/tv_applications_content"
+    	        android:layout_width="220dp"
+    	        android:layout_height="wrap_content"
+    	        android:layout_below="@+id/tv_applications_title"
+    	        android:layout_marginLeft="2dp"
+    	        android:layout_marginRight="2dp"
+    	        android:text="@string/applications_content"
+    	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	    
+    	    <ToggleButton
+    	        android:id="@+id/tb_applications"
+    	        android:layout_width="80dp"
+    	        android:layout_height="wrap_content"
+    	        android:layout_alignParentRight="true"
+    	        android:layout_marginTop="10dp"
+    	        android:textSize="16sp"
+    	        android:onClick="onApplicationsClicked" />
+    	    
+       </RelativeLayout>   
+    	    
+</RelativeLayout>

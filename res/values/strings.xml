@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EmotionSenseThree</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="accelerometer_title">Accelerometer</string>
+    <string name="accelerometer_content">Collects X, Y, Z axes movement data</string>
+    <string name="sms_title">SMS (Text) Logs</string>
+    <string name="sms_content">Reads the device\'s SMS logs</string>
+    <string name="call_title">Call Logs</string>
+    <string name="call_content">Reads the device\'s call logs</string>
+    <string name="applications_title">Application Use</string>
+    <string name="applications_content">Determines the applications that are currently running</string>
+    <string name="interval_title">Interval</string>
+    <string name="interval_content">Specify how frequently you want the service to run.</string>
+    <string name="duration_title">Duration</string>
+    <string name="duration_content">Specify how long you want the sensors to be active during each sensing session.</string>
+    <string name="title_activity_sensors_fragment">SensorsFragment</string>
+    <string name="title_activity_settings_fragment">SettingsFragment</string>
+    <string name="title_activity_update_sensor_params">UpdateSensorParams</string>
+
+    <string-array name="interval_array">
+        <item>10 Min</item>
+        <item>15 Min</item>
+        <item>20 Min</item>
+        <item>30 Min</item>
+        <item>60 Min</item>
+    </string-array>
+    <string-array name="duration_array">
+        <item>1 Min</item>
+        <item>2 Min</item>
+        <item>3 Min</item>
+        <item>5 Min</item>
+        <item>10 Min</item>
+    </string-array>
+
+    <string name="title_activity_update_sensor_interval">UpdateSensorInterval</string>
+    <string name="title_activity_update_sensor_duration">UpdateSensorDuration</string>
+    <string name="title_activity_sensor_config_updater">SensorConfigUpdater</string>
+    <string name="title_activity_update_sensor">UpdateSensor</string>
+
+</resources>
